@@ -5,6 +5,10 @@ import metrics.PerformanceTracker;
 public class HeapSort {
 
     public static void sort(int[] a, PerformanceTracker tracker) {
+        if (a == null || a.length <= 1) {
+            return;
+        }
+
         int n = a.length;
 
         for (int i = n / 2 - 1; i >= 0; i--) {
@@ -21,6 +25,7 @@ public class HeapSort {
             siftDown(a, i, 0, tracker);
         }
     }
+
 
     private static void siftDown(int[] a, int n, int i, PerformanceTracker tracker) {
         while (true) {
