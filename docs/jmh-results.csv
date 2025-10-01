@@ -1,0 +1,4 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99,9%)","Unit","Param: size"
+"benchmarks.HeapSortBenchmark.heapSort","avgt",1,25,"0,013985","0,000099","ms/op",100
+"benchmarks.HeapSortBenchmark.heapSort","avgt",1,25,"0,229319","0,002403","ms/op",1000
+"benchmarks.HeapSortBenchmark.heapSort","avgt",1,25,"3,157236","0,032400","ms/op",10000
